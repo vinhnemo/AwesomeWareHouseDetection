@@ -84,7 +84,7 @@ public class DetectorImpl extends BaseDetector {
     }
 
     public MsgResult takeSolutionDelivery(MsgData msgData) {
-
+        combinationCandidate(msgData);
         LinkedList<DeliverySolution> deliverySolutions = (LinkedList<DeliverySolution>) msgData.getDeliverySolutionList();
 
         Queue<MsgResult> deliverySolutionQueue = new LinkedList<>();
